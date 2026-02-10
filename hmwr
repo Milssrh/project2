@@ -1,0 +1,50 @@
+// домашка
+const users = [
+  { id: 1, name: "Элина", age: 22, city: "Ростов", isActive: true },
+  { id: 2, name: "Влада", age: 17, city: "Казахстан", isActive: false },
+  { id: 3, name: "Элеон", age: 30, city: "Египет", isActive: true },
+  { id: 4, name: "Самма", age: 25, city: "Памир", isActive: false }
+];
+
+function getActiveUsers(usersArray) {
+  return usersArray.filter(user => user.isActive);
+}
+
+const getUserNames = (usersArray) => usersArray.map(user => user.name);
+
+function findUserById(usersArray, id) {
+  const user = usersArray.find(user => user.id === id);
+  return user || null;
+}
+
+function getUsersStatistics(usersArray) {
+  return {
+    total: usersArray.length,
+    active: usersArray.filter(user => user.isActive).length,
+    inactive: usersArray.filter(user => !user.isActive).length
+  };
+}
+
+function getAverageAge(usersArray) {
+  if (usersArray.length === 0) return 0;
+  
+  const totalAge = usersArray.reduce((sum, user) => sum + user.age, 0);
+  return totalAge / usersArray.length;
+}
+
+function groupUsersByCity(usersArray) {
+  return usersArray.reduce((result, user) => {
+    if (!result[user.city]) {
+      result[user.city] = [];
+    }
+    result[user.city].push(user);
+    return result;
+  }, {});
+}
+
+console.log("1. Активные пользователи:", getActiveUsers(users));
+console.log("2. Имена пользователей:", getUserNames(users));
+console.log("3. Пользователь с id=3:", findUserById(users, 3));
+console.log("4. Статистика:", getUsersStatistics(users));
+console.log("5. Средний возраст:", getAverageAge(users));
+console.log("6. Группировка по городам:", groupUsersByCity(users));
