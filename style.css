@@ -1,0 +1,298 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    color: #333;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    line-height: 1.5;
+}
+
+header {
+    background: #fff;
+    border-radius: 12px;
+    padding: 40px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+h1 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #ddd;
+}
+
+h3 {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+p {
+    color: #666;
+}
+
+.box {
+    background: #fff;
+    border-radius: 12px;
+    padding: 25px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+img {
+    border-radius: 8px;
+    margin: 5px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: #fafafa;
+    border-radius: 10px;
+    padding: 20px;
+    width: calc(25% - 15px);
+    border: 1px solid #e0e0e0;
+}
+
+.card p {
+    font-size: 14px;
+}
+
+.step {
+    background: #fafafa;
+    border-radius: 10px;
+    padding: 20px;
+    flex: 1;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    border: 1px solid #e0e0e0;
+}
+
+.number {
+    background: #ddd;
+    color: #333;
+    font-size: 24px;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.step p {
+    font-size: 14px;
+}
+
+.green {
+    background: #f5f5f5;
+    text-align: center;
+}
+
+.green h2 {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.green p {
+    font-size: 16px;
+    color: #333;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+input, select, button {
+    padding: 12px 15px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-family: inherit;
+    background: #fff;
+}
+
+button {
+    background: #333;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    background: #555;
+}
+
+.contacts {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    justify-content: center;
+}
+
+.contacts div {
+    background: #f5f5f5;
+    padding: 10px 20px;
+    border-radius: 8px;
+    border: 1px solid #e0e0e0;
+}
+
+.dark {
+    background: #333;
+    color: #fff;
+    text-align: center;
+}
+
+.dark h2 {
+    color: #fff;
+    border-bottom: none;
+}
+
+.dark p {
+    color: #ccc;
+}
+
+.big-btn {
+    margin-bottom: 20px;
+}
+
+.big-btn button {
+    width: 100%;
+    background: #333;
+    padding: 18px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 10px;
+}
+
+.sale {
+    background: #fafafa;
+    text-align: center;
+    border: 1px solid #e0e0e0;
+}
+
+.label {
+    background: #ddd;
+    display: inline-block;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.sale h2 {
+    border-bottom: none;
+    padding-bottom: 0;
+}
+
+.timer {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.timer div {
+    background: #333;
+    color: #fff;
+    padding: 10px 15px;
+    border-radius: 8px;
+    font-weight: bold;
+}
+
+.faq {
+    background: #fafafa;
+    border-radius: 10px;
+    padding: 15px 20px;
+    margin-bottom: 15px;
+    border-left: 3px solid #ccc;
+}
+
+.question {
+    font-weight: bold;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+.answer {
+    color: #666;
+    font-size: 14px;
+}
+
+footer {
+    background: #fff;
+    border-radius: 12px;
+    padding: 25px;
+    text-align: center;
+    margin-top: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+footer p:first-child {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+footer p:last-child {
+    font-size: 12px;
+    color: #999;
+}
+
+@media (max-width: 700px) {
+    .card {
+        width: 100%;
+    }
+    
+    .row {
+        flex-direction: column;
+    }
+    
+    h1 {
+        font-size: 28px;
+    }
+    
+    img {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
